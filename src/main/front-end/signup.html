@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign in</title>
+    <script>
+        function usernameAvailable(){
+            let username = document.getElementById('username').value;
+            let ajaxRequest = new XMLHttpRequest();
+            ajaxRequest.onreadystatechange = function(){}
+            ajaxRequest.open('GET', 'http://localhost:35729/users/' + username);
+            ajaxRequest.send();
+        }
+    </script>
+</head>
+
+<body>
+<div class="main">
+    <p class="sign" align="center">Sign up</p>
+    <form class="form1">
+        <label>
+            <input class="un" id ="username" align="center" placeholder="Username">
+        </label>
+        <label>
+            <input class="pass" type="password" id="password" align="center" placeholder="Password">
+        </label>
+        <a class="submit" align="center">Sign up</a>
+        <p class="forgot" align="center"><a href="signin.html">Already have an account? Sign in instead</p>
+
+
+</div>
+
+</body>
+
+</html>
