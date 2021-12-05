@@ -1,9 +1,7 @@
 package com.csc207.cli;
 
-import com.csc207.domain.FixedTask;
-import com.csc207.domain.NonFixedTask;
-import com.csc207.domain.Project;
-import com.csc207.domain.Week;
+import com.csc207.domain.*;
+import com.csc207.domain.CreateProject;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -17,7 +15,7 @@ public class UserInterfaceCreates {
      * @param reader: The scanner in the Main module reading user input.
      * @return user's selection option as an integer.
      */
-    public static int createWeek(Scanner reader){
+    public static int createWeekOption(Scanner reader){
         // Give instructions to the user
         UserInterfacePrints.createWeekMessage();
         String selectedOption = reader.nextLine();
@@ -155,9 +153,9 @@ public class UserInterfaceCreates {
                     " nearest 0.5)");
 
             double totalHours = Double.parseDouble(reader.nextLine());
-            double minHours = Project.calculateMinHours(week, startDate, dueDateTime, totalHours, 7);
+            double minHours = CreateProject.calculateMinHours(week, startDate, dueDateTime, totalHours, 7);
             // Create case to handle when minHours is 0.0
-            double maxHours = Project.calculateMaxHoursWeek(week);
+            double maxHours = CreateProject.calculateMaxHoursWeek(week);
             System.out.println("You must work on this project at least " + minHours + " per day and at most " + maxHours +
                     " per day.");
             System.out.println("Please enter the maximum amount of time you would like to work on this project in a given" +
@@ -170,10 +168,10 @@ public class UserInterfaceCreates {
         }
     }
 
-    public static createWeek(Long userId, Scanner reader) {
+    public static Week createWeek(Long userId, Scanner reader) {
         LocalDate startDate = getStartDate(reader);
         Day[] days = DaysInjector.constructDayList(startDate);
-        week = new Week(userId, days);
+        return new Week(userId, days);
     }
 
     /**

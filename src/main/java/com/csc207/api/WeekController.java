@@ -2,7 +2,7 @@ package com.csc207.api;
 
 import com.csc207.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
@@ -44,8 +44,8 @@ public class WeekController {
      * Saves the week and its tasks to the week database and the task database, respectively.
      * @param week: The week that will be saved to the database.
      */
-    @Transactional
-    public void saveWeek(Week week) {
+    @PostMapping("/weeks")
+    public void saveWeek(@RequestBody Week week) {
         // convert to week serializable
         WeekSerializable convertedWeek = WeekToSerializableAdapter.WeekToWeekSerializable(week);
         // convert to task serializable
@@ -58,7 +58,8 @@ public class WeekController {
         }
     }
 
-    private Week importWeek(long userId) {
+    @GetMapping("/weeks/{userId}")
+    public Week importWeek(@PathVariable long userId) {
         Week week;
         WeekSerializable weekSers = this.weekSerializableInteractorDataOut.getWeekSerializableByUserId(userId);
         this.weekSerializableInteractorDataOut.removeWeekSerializableByUserId(userId);
@@ -67,4 +68,6 @@ public class WeekController {
         week = SerializableToWeekAdapter.SerializableToWeek(weekSers, tasksSers);
         return week;
     }
+
+
 }

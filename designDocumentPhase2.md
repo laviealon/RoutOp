@@ -86,19 +86,19 @@ In phase 0 our group designed a scheduling algorithm that is capable of scheduli
 
   
 
-1.  The program should be able to inform the user when a task/project can’t be scheduled due to task overlap/lack of time
+1. The program should be able to inform the user when a task/project can’t be scheduled due to task overlap/lack of time
+
+2. When a task/project can’t be scheduled the user should be given the choice to either give up scheduling the current task or modify their schedule so that the current task can be scheduled
     
-2.  When a task/project can’t be scheduled the user should be given the choice to either give up scheduling the current task or modify their schedule so that the current task can be scheduled
+3. If the user decides to continue scheduling the current task, our program should provide the user with the minimum number of hours he/she needs to remove from the current taskload to schedule the current task.
     
-3.  If the user decides to continue scheduling the current task, our program should provide the user with the minimum number of hours he/she needs to remove from the current taskload to schedule the current task.
-    
-4.  The user should be allowed to remove a task or change the duration of a task
-    
+4. The user should be allowed to remove a task or change the duration of a task
 
   
 
 To accomplish 1 we have added a new use case class called Checker that checks if a task/project can be scheduled in a week. For FixedTasks, Checker implements a method called CheckScheduleFixedTask that checks if a task overlap would occur once the user schedules the current FixedTask. As for NonFixedTask and projects, Checker checks if the user has enough time in the week to work on the NonFixedTask/project. Unfortunately, our priorities in wrapping up the project did not allow us to implement steps 2-4, but we hope that a future expansion of Routop would enable for these features we designed.
-
+The commit messages corresponding to these changes can be found on (1) Nov 13 'convert public to private'- even though the name does not reflect changes in Checker, in this commit all codes in checker class were added to our program.
+(2)Nov 13 'added checker to the UI', where the check class is connected to the UI.
   
 
 **Use of GitHub Features**
@@ -113,13 +113,15 @@ Our group made use of built-in refactoring features in IntelliJ in order to extr
 
 Another way in which we refactored our code was in our attempt to remove smells. We extracted duplicate code into helper methods, removed unnecessary classes, cut down long methods, and cut out dead code. 
 
-There are some instances where we are worrid that we may be violating the smell of long classes. These are addressed in our questions below (e.g. splitting user interface). We realize that some of the methods in scheduler and putter are on the longer side, but we hope to split these up as we create a more complex and flexible scheduling algorithm for phase 2.
+There are some instances where we are worried that we may be violating the smell of long classes. These are addressed in our questions below (e.g. splitting user interface). We realize that some of the methods in scheduler and putter are on the longer side, but we hope to split these up as we create a more complex and flexible scheduling algorithm for phase 2.
 
 We are unsure if FixedTask and NonfixedTask count as alternative classes with different interfaces. We think not, so we left it, but we can take care of it if necessary.
 
 Instead of having multiple scanners in the UI, we decided to only have one scanner in the main module. This took care of many of our errors and, we think, is a much neater way to take care of processing user input.
 
-  
+Split up controller - Issue #25 Split up Controller and Checker  (commit messages )
+Split up adapter class - Issue #7 Split up Adaptor class into two adaptor classes
+Split up UI - Issue #2 Split up userinterface
 
 **Clean Architecture:**
 

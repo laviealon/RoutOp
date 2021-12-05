@@ -40,7 +40,7 @@ public class UserInterfaceMC {
      */
     public static int scheduleDuty(Scanner reader){
         // Give user instructions
-        UserInterfacePrints.scheduleOptionsMessage();
+        scheduleOptionsMessage();
         String selectedOption = reader.nextLine(); // Get user input
         return Integer.parseInt(selectedOption);
     }
@@ -55,7 +55,7 @@ public class UserInterfaceMC {
      */
     public static int createOrImportWeek(Scanner reader){
         // Give instructions to the user
-        UserInterfacePrints.createOrImportWeekMessage();
+        createOrImportWeekMessage();
         String selectedOption = reader.nextLine();  // Read user input
         return Integer.parseInt(selectedOption);
     }
