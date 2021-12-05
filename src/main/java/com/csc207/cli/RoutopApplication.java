@@ -14,7 +14,7 @@ import java.util.Scanner;
 @EnableJpaRepositories("com.csc207.api")
 @EntityScan({"com.csc207.domain"})
 @ComponentScan({"com.csc207.api", "com.csc207.cli", "com.csc207.domain"})
-public class RoutopApplication implements CommandLineRunner {
+public class RoutopApplication {
     @Autowired
     private final UserInterface ui;
 

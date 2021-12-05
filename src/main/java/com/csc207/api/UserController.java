@@ -3,12 +3,13 @@ package com.csc207.api;
 import com.csc207.domain.User;
 import org.hibernate.cfg.Environment;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
 import java.util.List;
 
-@RestController
+@Controller
 public class UserController {
     @Autowired
     private final UserInteractorDataOut userInteractorDataOut;
@@ -21,7 +22,14 @@ public class UserController {
     }
 
 
+    @GetMapping("/helloworld")
+    @ResponseBody
+    String helloWorld() {
+        return "Hello world!";
+    }
+
     @GetMapping("/allusers")
+    @ResponseBody
     List<User> all() {
         return userInteractorDataOut.getAllUsers();
     }
@@ -33,6 +41,7 @@ public class UserController {
      * @return whether this username-password pair is in the database.
      */
     @GetMapping("/allusers/{username}")
+    @ResponseBody
     public boolean isUsernameInDb(@PathVariable String username){
         return this.userInteractorDataOut.isUsernameInDb(username);
     }
