@@ -13,7 +13,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class UserControllerTest {
+public class UserSchedulingControllerTest {
     Week week;
     NonFixedTask t1;
     NonFixedTask t2;

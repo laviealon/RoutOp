@@ -1,6 +1,7 @@
 package com.csc207.cli;
 
 import com.csc207.domain.Week;
+import com.csc207.cli.UserChoiceBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -30,30 +31,31 @@ public class RoutopApplication {
         SpringApplication.run(RoutopApplication.class, args);
     }
 
-//    @Override
-//    public void run(String... args){
-//        Scanner reader = new Scanner(System.in);
-//        boolean haveAccount = this.ui.signInOrSignUp(reader);
-//        Long userId = this.ui.activateSignInOrSignUp(haveAccount, reader);
-//        int createOrImportChoice;
-//        if(haveAccount){
-//            createOrImportChoice = UserInterface.createOrImportWeek(reader);
-//        } else {
-//            createOrImportChoice = UserInterface.createWeek(reader);
-//        }
-//        Week week = this.ui.activateCreateOrImport(userId, createOrImportChoice, reader);
-//        System.out.println("Here is your week:");
-//        System.out.println(week);
-//
-//        while(true){
-//            int selectionForScheduling = UserInterface.scheduleDuty(reader);
-//            this.ui.schedulingDecision(week, selectionForScheduling, reader);
-//            System.out.println(week);
-//            if (selectionForScheduling == 4) {
-//                break;
-//            }
-//        }
-//        reader.close();
-//    }
+
+    @Override
+    public void run(String... args){
+        Scanner reader = new Scanner(System.in);
+        boolean haveAccount = this.ui.signInOrSignUp(reader);
+        Long userId = this.ui.activateSignInOrSignUp(haveAccount, reader);
+        int createOrImportChoice;
+        if(haveAccount){
+            createOrImportChoice = UserInterfaceMC.createOrImportWeek(reader);
+        } else {
+            createOrImportChoice = UserChoiceBuilder.schedulingDecision(reader);
+        }
+        Week week = this.ui.implementCreateOrImport(userId, createOrImportChoice, reader);
+        System.out.println("Here is your week:");
+        System.out.println(week);
+
+        while(true){
+            int selectionForScheduling = UserInterface.scheduleDuty(reader);
+            this.ui.schedulingDecision(week, selectionForScheduling, reader);
+            System.out.println(week);
+            if (selectionForScheduling == 4) {
+                break;
+            }
+        }
+        reader.close();
+    }
 
 }
