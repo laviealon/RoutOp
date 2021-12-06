@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="formStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Create a Task!</title>
+    <script>
+        function changeLabel(task){
+            if(task === "Fixed Task") {
+                document.getElementById("nft").style.display= "none";
+                document.getElementById("lettuce").style.display= "none";
+                document.getElementById("line").style.display= "none";
+                document.getElementById("ft").style.display= "block";
+                document.getElementById("lettuce2").style.display= "inline";
+                document.getElementById("line 2").style.display= "block";
+                document.getElementById("line5").style.display= "block";
+            }
+            if(task === "Non-Fixed Task") {
+                document.getElementById("nft").style.display= "block";
+                document.getElementById("lettuce").style.display= "inline";
+                document.getElementById("line").style.display= "block";
+                document.getElementById("ft").style.display= "none";
+                document.getElementById("lettuce2").style.display= "none";
+                document.getElementById("line 2").style.display= "none";
+                document.getElementById("line5").style.display= "block";
+            }
+
+        }
+    </script>
+</head>
+<body background-color="#e1ad01">
+<section id="overlay">
+    <hr>
+    <form action="submission.html" method="POST">
+        <h1>Create a Task!</h1>
+
+        <section class="sauce-selection">
+            <label for="sauce">What type of task would you like?</label>
+            <input list="sauces" id="sauce" name="sauce" onchange=changeLabel(this.value)>
+            <datalist id="sauces">
+                <option value="Fixed Task"></option>
+                <option value="Non-Fixed Task"></option>
+            </datalist>
+        </section>
+        <hr>
+
+        <section class="protein">
+            <label for="patty">Task name:</label>
+            <input type="text" name="patty" id="patty">
+        </section>
+        <hr>
+
+        <section class="patties">
+            <label for="amount">Duration:</label>
+            <input type="text" name="amount" id="amount">
+        </section>
+        <hr>
+
+
+
+
+        <section class="cooked">
+            <label for="doneness">How important is this task?</label>
+            <br>
+            <span>As important as the CSC207 project</span>
+            <input type="range" name="doneness" id="doneness" value="3" min="1" max="5">
+            <span>As important as climate change</span>
+        </section>
+        <hr id = "line5">
+
+        <section class="toppings">
+            <span id="nft">When would you like to finish this task by?</span>
+            <br id="line3">
+            <input type="datetime-local" name="topping" id="lettuce" value="lettuce" >
+        </section>
+        <hr id="line">
+
+        <section class="toppings">
+            <span id="ft">When would you like to start this task?</span>
+            <br id="line4">
+            <input type="datetime-local" name="topping" id="lettuce2" value="lettuce" >
+        </section>
+        <hr id="line 2">
+
+
+        <section class="submission">
+            <a class="submit" href = "timetableAfterTask.html" >Submit</a>
+        </section>
+    </form>
+</section>
+</body>
+</html>

@@ -6,7 +6,25 @@
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sign in</title>
-    <script type="text/javascript" src="signin.js" defer></script>
+    <script>
+        function check(){
+            if(document.getElementById("password").value !== "Tabeeb"){
+                alert("Username or password incorrect!");
+                document.getElementById("button").href="signin.html"
+            }
+            else{
+                document.getElementById("button").href="timetable.html"
+            }
+        }
+        function whatnext(){
+            if(document.getElementById("password").value !== "Tabeeb"){
+                return "signin.html"
+            }
+            else{
+                return "timetable.html"
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -14,12 +32,13 @@
     <p class="sign" align="center">Sign In</p>
     <form class="form1">
         <label>
-            <input class="un" id ="username" type="text" align="center" placeholder="Username">
+            <input class="un" id ="username" type="text" align="center" placeholder="Username" required>
         </label>
         <label>
-            <input class="pass" id="password" type="password" align="center" placeholder="Password">
+            <input class="pass" id="password" type="password" align="center" placeholder="Password" required onchange="check()">
         </label>
-        <a class="submit" href = "timetable.html" >Sign in</a>
+<!--        <input type="submit"  class="submit" value="Submit" id="button">-->
+        <a class="submit" id="button" onclick="check()">Sign in</a>
         <p class="forgot" align="center">No account? <a href="signup.html"> <u>Sign up. </u> </a></p>
     </form>
 </div>
