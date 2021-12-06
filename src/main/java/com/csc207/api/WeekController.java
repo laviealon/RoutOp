@@ -1,11 +1,8 @@
 package com.csc207.api;
 
-import com.csc207.domain.TaskSerializable;
-import com.csc207.domain.Week;
-import com.csc207.domain.WeekToSerializableAdapter;
-import com.csc207.domain.WeekSerializable;
+import com.csc207.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
@@ -21,6 +18,10 @@ public class WeekController {
     private final WeekSerializableInteractorDataIn weekSerializableInteractorDataIn;
     @Autowired
     private final TaskSerializableInteractorDataIn taskSerializableInteractorDataIn;
+    @Autowired
+    private WeekSerializableInteractorDataOut weekSerializableInteractorDataOut;
+    @Autowired
+    private TaskSerializableInteractorDataOut taskSerializableInteractorDataOut;
 
     /**
      * The constructor for the WeekController class.
@@ -41,8 +42,8 @@ public class WeekController {
      * Saves the week and its tasks to the week database and the task database, respectively.
      * @param week: The week that will be saved to the database.
      */
-    @Transactional
-    public void saveWeek(Week week) {
+    @PostMapping("/weeks")
+    public void saveWeek(@RequestBody Week week) {
         // convert to week serializable
         WeekSerializable convertedWeek = WeekToSerializableAdapter.WeekToWeekSerializable(week);
         // convert to task serializable
@@ -53,5 +54,20 @@ public class WeekController {
         for(TaskSerializable task: convertedTasks) {
             this.taskSerializableInteractorDataIn.saveTaskSerializable(task);
         }
+    }
+
+    /**
+     * Retrieve the week and its tasks from the week database and the task database, respectively.
+     * @param userId: The userId of the user who has a stored week
+     */
+    @GetMapping("/weeks/{userId}")
+    public Week importWeek(@PathVariable long userId) {
+        Week week;
+        WeekSerializable weekSers = this.weekSerializableInteractorDataOut.getWeekSerializableByUserId(userId);
+        this.weekSerializableInteractorDataOut.removeWeekSerializableByUserId(userId);
+        ArrayList<TaskSerializable> tasksSers = this.taskSerializableInteractorDataOut.getTasksByUserId(userId);
+        this.taskSerializableInteractorDataOut.removeTaskSerializablesByUserId(userId);
+        week = SerializableToWeekAdapter.SerializableToWeek(weekSers, tasksSers);
+        return week;
     }
 }
