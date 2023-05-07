@@ -1,39 +1,39 @@
 ## Accessibility Report
 
-#### Equitable Use:
+This report provides an overview of the accessibility standards incorporated in the RoutOp software to comply with WCAG (Web Content Accessibility Guidelines) 2.
 
-Our program web app is designed such that all users can have the same experience when using it. We ensured this by creating a GUI with high contrast colors to minimize readability issues for colorblind users.
+#### 1. Equitable Use:
 
-#### Flexibility in Use:
+Our program's web application has been designed to provide a consistent user experience for all users. To ensure this, we have employed a high contrast graphical user interface (GUI) to minimize readability issues for colorblind users.
 
-Our program gives users flexibility by allowing them to access our program from any device via the web. Furthermore, our program acknowledges that users have many different ways of relating to tasks. This is why we offer the user to schedule three different kinds of tasks: fixed tasks, non-fixed tasks, and projects. Each of these kinds of tasks seek to meet a different user need.
+#### 2. Flexibility in Use:
 
-#### Simple and Intuitive Use:
+Our program is designed to provide users with a high degree of flexibility by enabling them to access it from any device through the web. In addition, we recognize that users have diverse preferences for managing their tasks. To address this, we offer three distinct task scheduling options, namely fixed tasks, non-fixed tasks, and projects, each catering to specific user needs.
 
-We made sure that our application was simple and intuitive by designing it such that the language used when prompting the user to undertake actions such as signing in or changing their schedule are simple and infromative enough that the user will not nned a tutorial for the website. This was done by eliminating all unnecessary complexity, labeling buttons with clear instructions, and offering clear and concise alterts to notify users of common errors.
+#### 3. Simple and Intuitive Use:
 
-#### Perceptible information: 
+We ensured the simplicity and intuitiveness of our application by crafting its language in a straightforward and informative manner. This approach eliminates the need for users to undergo tutorials when navigating the website. Our strategy involved streamlining complexity, providing clear button labels with instructions, and issuing concise alerts to notify users of any typical errors.
 
-The website we made was designed with the perceptibility of information as one of our main objectives. This was done by making the font size large enough and choosing a font that was legible. We also differentiated the various elements of the pages into clear sections and prompts that can be easily described and are thus conducie to easily giving instructions or directions. We also created the GUI with colors that contrast highly so that all information is clearly perceptible.
+#### 4. Perceptible information: 
 
-#### Tolerance for Error: 
+RoutOp was deliberately designed with a focus on ensuring the perceptibility of information. We accomplished this by using a legible font that is large enough to be easily read. We also created clear sections and prompts, allowing for simple and effective instructions or directions to be provided. Additionally, we employed high-contrast colors throughout the GUI to ensure that all information is easily distinguishable.
 
-Users of our website can feel safe knowing that it tries to prevent most errors that they may make. For example, all buttons on the webpages are big enough and far away from each other so that users do not accidentaly press a button they did not intend to press. The buttons also have padding around them for misclicks.
-Additionally, we have alerts built to help the user identify common mistakes that might prevent the program from running as desired (e.g. the user provides the wrong password and thus cannot sign in).
+#### 5. Tolerance for Error: 
 
-#### Low Physical Effort:
+Our website prioritizes user safety by implementing measures to minimize errors that may occur while using the platform. This includes designing all buttons on the webpages to be adequately spaced apart, and of sufficient size, thus preventing accidental clicking. Furthermore, the buttons are enclosed by padding to prevent misclicks. Additionally, our system is equipped with alerts that enable users to identify and rectify common errors that may prevent the program from functioning as expected. For instance, in cases where the user provides an incorrect password, the system promptly notifies them, thereby ensuring a smooth user experience.
 
-The program is designed to minimizes the physical effort the user has to put in by minimizing repetitive actions. This is part of the idea behind scheduling projects, where the program asks you questions about one large task and then breaks it down and schedules it in multiple slots over a window of time so that the user does not have to do so manually.
-Our program requires no large amounts of scrolling or typing. Each scheduling process consists of a few buttons and short text-entries, requiring low physical effort. Furthermore, our program saves each task as it is scheduled, so that the user does not need to undergo the physical strain of sitting or standing in a single location due to application usage, if they do not want to.
+#### 6. Low Physical Effort:
 
-#### Size and Space for Approach and Use
+The program has been designed with the aim of reducing physical strain on the user by minimizing repetitive actions. To achieve this, we have incorporated the scheduling of projects feature, where the program prompts the user with questions about a large task and automatically breaks it down into smaller parts scheduled over a specified time period. This eliminates the need for manual input and reduces physical effort. Our program also features an intuitive interface with minimal scrolling and typing requirements, which involves a few buttons and short text-entries, further reducing physical strain. Additionally, the program saves each task as it is scheduled, allowing users to access it from anywhere and reducing the need for prolonged use in a single location.
 
-Of course, we did our best to ensure that the app is easy to use. A big part of why we chose to use chose to use a web application is that it enables our program to be run on all sorts of devices to suit the user needs. Our program will scale to any device screen and so can meet the size and space for approach for use that the user builds into their preferred web surfing environment. Our html is compatible with text to speech for those who cannot interact with the text on the screen.
+#### 7. Size and Space for Approach and Use
 
-### Target Market
+We made concerted efforts to ensure that our application is user-friendly. We opted to develop a web application to enable its use across a wide range of devices to cater to diverse user needs. The program is designed to dynamically adjust to various screen sizes, ensuring compatibility with the user's preferred device and screen settings. Additionally, we made the HTML compatible with text-to-speech technology to facilitate access for users who may not be able to interact with the text on the screen.
 
-Overall, we think that our program should be marketed towards people who could make use of an app that schedules their day for them. This category is mostly made up of people who have busy days and are looking for a way to automate the process of scheduling their weeks. In general, this would include people like students, who often have workloads that they do not know how to handle, and professionals in fields that have lots of business meetings and events that they need to keep track of. One demographic we specifically had in mind while scheduling our program are people who have difficulty deciding how to manage thier time. The ability of the system to schedule non-fixed tasks and projects allows the user to accomplish their tasks in time without needing to decide where to put them in thier schedule. This epxerience was inspired by some teammates experience meeting with learning strategists who perform a similar function.
+### 8. Target Market
 
-### Demographics
+Our program is particularly well-suited for individuals who require assistance in organizing their busy schedules. This demographic includes students, who may struggle with managing their academic workload, and professionals with demanding schedules filled with numerous meetings and events. We also designed our program with individuals who may have difficulty making decisions about time management in mind. The scheduling feature for non-fixed tasks and projects helps users accomplish their goals without having to decide when to fit them into their schedule. Our inspiration for this feature came from the experiences of our team members who met with learning strategists that offered similar services.
 
-In general, it does not seem that any demographic would be more or less likely to use or program. It is possible that people who do not have busy schedules might not have much use of our app. In addition, anyone who is picky about the way they like to complete projects (for example, someone who likes to complete all the tasks for a project in the morning, a feature which is not yet part of our program) might prefer to not use our website. Our hope is that in connecting to the web we make our program accessible to most users, but there are likely certain demographics that would still be excluded be our program (e.g. if the web does not allow the user to input without typing directly this would affect users with motor issues).
+### 9. Demographics
+
+In general, it appears that the usefulness of our program is not limited by any specific demographic. However, it is possible that individuals who do not have hectic schedules may not find our program as valuable. Additionally, those who have specific preferences regarding task completion, such as completing all tasks for a project in the morning, may not be able to fully utilize our current program. While our web-based platform aims to make the program accessible to most users, there may still be certain demographics who are unable to use it due to limitations, such as individuals with motor impairments that prevent direct typing.
