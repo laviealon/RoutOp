@@ -30,10 +30,10 @@ The program has been designed with the aim of reducing physical strain on the us
 
 We made concerted efforts to ensure that our application is user-friendly. We opted to develop a web application to enable its use across a wide range of devices to cater to diverse user needs. The program is designed to dynamically adjust to various screen sizes, ensuring compatibility with the user's preferred device and screen settings. Additionally, we made the HTML compatible with text-to-speech technology to facilitate access for users who may not be able to interact with the text on the screen.
 
-### 8. Target Market
+#### 8. Target Market
 
 Our program is particularly well-suited for individuals who require assistance in organizing their busy schedules. This demographic includes students, who may struggle with managing their academic workload, and professionals with demanding schedules filled with numerous meetings and events. We also designed our program with individuals who may have difficulty making decisions about time management in mind. The scheduling feature for non-fixed tasks and projects helps users accomplish their goals without having to decide when to fit them into their schedule. Our inspiration for this feature came from the experiences of our team members who met with learning strategists that offered similar services.
 
-### 9. Demographics
+#### 9. Demographics
 
 In general, it appears that the usefulness of our program is not limited by any specific demographic. However, it is possible that individuals who do not have hectic schedules may not find our program as valuable. Additionally, those who have specific preferences regarding task completion, such as completing all tasks for a project in the morning, may not be able to fully utilize our current program. While our web-based platform aims to make the program accessible to most users, there may still be certain demographics who are unable to use it due to limitations, such as individuals with motor impairments that prevent direct typing.
