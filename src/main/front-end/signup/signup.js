@@ -8,6 +8,12 @@ function signUp(username, password) {
     }));
 }
 
+function checkUsername(username) {
+    return fetch("http://localhost:8080/users/check/" + username)
+        .then(response => response.json())
+        .then(data => data);
+}
+
 // takes username and returns userId. Returns undefined if username not in database.
 async function getUserid(username) {
     return fetch("http://localhost:8080/users/" + username)
@@ -16,21 +22,18 @@ async function getUserid(username) {
         .catch(reject => console.log(reject));
 }
 
-// if userId undefined, allow to create an account with username. Otherwise, alert
+// if username not in database, allow to create an account with username. Otherwise, alert
 async function createAccount(){
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    const userid = await getUserid(username);
+    const usernameInDB = await checkUsername(username);
 
 
-    if (userid !== undefined) {
+    if (usernameInDB) {
         alert("Username is already in use. Please enter a different username.");
     } else {
         await signUp(username, password);
         let userid = await getUserid(username);
-        while (userid === undefined){
-            let userid = await getUserid(username);
-        }
         localStorage.setItem("userid", userid.toString());
         location.href = "../start-when/start-when.html";
     }

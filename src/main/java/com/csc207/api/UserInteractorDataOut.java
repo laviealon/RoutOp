@@ -63,7 +63,7 @@ public class UserInteractorDataOut {
      * @param username: The username of the user that will be found in the database.
      * @return The User object of the username
      */
-    public User getUserFromUsername(String username) {
+    public User getUserFromUsername(String username) throws IndexOutOfBoundsException {
         return this.userRepo.getUserByUsername(username).get(0);
     }
 

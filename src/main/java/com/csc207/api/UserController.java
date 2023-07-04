@@ -52,7 +52,8 @@ public class UserController {
      * @param username: The username.
      * @return whether the username is in the database
      */
-    public boolean isUsernameInDb(String username){
+    @GetMapping("/users/check/{username}")
+    public boolean isUsernameInDb(@PathVariable String username){
         return this.userInteractorDataOut.isUsernameInDb(username);
     }
 
