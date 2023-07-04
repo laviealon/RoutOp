@@ -2,6 +2,8 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 <br />
 <div align="center">
@@ -31,3 +33,5 @@
 [contributors-url]: https://github.com/laviealon/RoutOp/graphs/contributors
 [issues-shield]: https://img.shields.io/badge/open_issues-2-gree
 [issues-url]: https://github.com/laviealon/RoutOp/issues
+[linkedin-shield]: https://img.shields.io/badge/-Alon_Lavie-black.svg?logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/alon-lavie
