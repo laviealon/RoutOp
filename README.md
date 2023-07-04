@@ -1,9 +1,9 @@
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
 [![Spring][spring-shield]][spring-url]
 [![Java][java-shield]][java-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Contributors][contributors-shield]][contributors-url]
 
 
 <br />
