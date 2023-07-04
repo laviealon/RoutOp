@@ -1,7 +1,8 @@
 <a name="readme-top"></a>
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
+[![Spring][spring-shield]][spring-url]
+[![Java][java-shield]][java-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -29,9 +30,13 @@
 </div>
 
 
-[contributors-shield]: https://img.shields.io/badge/contributors-5-red
+[contributors-shield]: https://img.shields.io/badge/contributors-5-blue
 [contributors-url]: https://github.com/laviealon/RoutOp/graphs/contributors
 [issues-shield]: https://img.shields.io/badge/open_issues-gree
 [issues-url]: https://github.com/laviealon/RoutOp/issues
 [linkedin-shield]: https://img.shields.io/badge/-Alon_Lavie-black.svg?logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/alon-lavie
+[spring-shield]: https://img.shields.io/badge/SpringBoot-2.5.2-gree?logo=spring
+[spring-url]: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
+[java-shield]: https://img.shields.io/badge/Java-1.8-red
+[java-url]: https://www.java.com
