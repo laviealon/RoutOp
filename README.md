@@ -2,8 +2,9 @@
 
 [![Spring][spring-shield]][spring-url]
 [![Java][java-shield]][java-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 [![Contributors][contributors-shield]][contributors-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 <br />
