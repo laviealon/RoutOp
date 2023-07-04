@@ -1,4 +1,7 @@
+<a name="readme-top"></a>
+
 [![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
 
 <br />
 <div align="center">
@@ -24,5 +27,7 @@
 </div>
 
 
-[contributors-shield]: https://img.shields.io/badge/contributors-5-gree
+[contributors-shield]: https://img.shields.io/badge/contributors-5-red
 [contributors-url]: https://github.com/laviealon/RoutOp/graphs/contributors
+[issues-shield]: https://img.shields.io/badge/open_issues-2-gree
+[issues-url]: https://github.com/laviealon/RoutOp/issues
