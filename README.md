@@ -18,11 +18,11 @@
     <a href="https://github.com/laviealon/RoutOp"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/laviealon/RoutOp">View Demo</a> <!-- eventually replace with remote link -->
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/laviealon/RoutOp/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/laviealon/RoutOp/issues">Request Feature</a>
   </p>
 </div>
 
