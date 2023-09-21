@@ -6,6 +6,7 @@
 [![LinkedIn-Alon][linkedin-alon-shield]][linkedin-alon-url]
 [![LinkedIn-Tehilla][linkedin-tehilla-shield]][linkedin-tehilla-url]
 [![LinkedIn-Issam][linkedin-issam-shield]][linkedin-issam-url]
+[![LinkedIn-Hailey][linkedin-hailey-shield]][linkedin-hailey-url]
 
 
 
@@ -41,6 +42,8 @@
 [linkedin-tehilla-url]: https://www.linkedin.com/in/tehilla-helfenbaum-aa904022a/
 [linkedin-issam-shield]: https://img.shields.io/badge/-Issam_Arabi-black.svg?logo=linkedin&colorB=555
 [linkedin-issam-url]: https://www.linkedin.com/in/issamarabi/
+[linkedin-hailey-shield]: https://img.shields.io/badge/-Hailey_Xia-black.svg?logo=linkedin&colorB=555
+[linkedin-hailey-url]: https://www.linkedin.com/in/hailey-xia-a0375a1a1/
 [spring-shield]: https://img.shields.io/badge/SpringBoot-2.5.2-gree?logo=spring
 [spring-url]: https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/
 [java-shield]: https://img.shields.io/badge/Java-1.8-red
