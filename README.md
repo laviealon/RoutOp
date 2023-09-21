@@ -5,7 +5,7 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![LinkedIn-Alon][linkedin-alon-shield]][linkedin-alon-url]
 [![LinkedIn-Tehilla][linkedin-tehilla-shield]][linkedin-tehilla-url]
-[[LinkedIn-Issam][linkedin-issam-shield]][linkedin-issam-url]
+[linkedin-issam-url]
 
 
 
