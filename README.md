@@ -25,13 +25,14 @@
     <a href="https://github.com/laviealon/RoutOp"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/laviealon/RoutOp">View Demo</a> <!-- eventually replace with remote link -->
-    ·
-    <a href="https://github.com/laviealon/RoutOp/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/laviealon/RoutOp/issues">Request Feature</a>
   </p>
 </div>
+
+In the second year of my mathematics and computer science BSc at the University of Toronto, I built a schedule-optimizing (RoutOp, or Routine Optimizer) program on a team of 5 students. The project emphasized software design best practices.
+
+As outlined in the design reports (found in the root directory), we employed all of the SOLID design principles, "Gang of Four" design patterns, refactoring principles, Uncle Bob's clean architecture principles, and MVC in the design and building of this software. We also included accessibility (WCAG) compliance, UML diagrams, and architecture diagrams. These can all be found in the root directory of this project.
+
+After 4 months of work with 3 sprint phases, we recieved 98% on this capstone project.
 
 
 [contributors-shield]: https://img.shields.io/badge/contributors-5-blue
