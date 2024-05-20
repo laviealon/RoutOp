@@ -28,7 +28,7 @@
   </p>
 </div>
 
-In the second year of my mathematics and computer science BSc at the University of Toronto, I built a schedule-optimizing (RoutOp, or Routine Optimizer) program on a team of 5 students. The project emphasized software design best practices.
+In the second year of our computer science program at the University of Toronto, we built a schedule-optimizing (RoutOp, or Routine Optimizer) program on a team of 5 students. The project emphasized software design best practices.
 
 As outlined in the design reports (found in the root directory), we employed all of the SOLID design principles, "Gang of Four" design patterns, refactoring principles, Uncle Bob's clean architecture principles, and MVC in the design and building of this software. We also included accessibility (WCAG) compliance, UML diagrams, and architecture diagrams. These can all be found in the root directory of this project.
 
